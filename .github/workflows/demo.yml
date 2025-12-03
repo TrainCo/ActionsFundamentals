@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'          # v1, v1.2, v1.2.3
+      - 'release-*'   # release-2025-12-03
 
 jobs:
   build:
